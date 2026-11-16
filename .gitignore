@@ -1,0 +1,26 @@
+# 构建产物
+build/
+dist/
+
+# 中间文件
+*.o
+*.res
+*.part
+
+# Python
+__pycache__/
+*.pyc
+
+# 字体与图标：二进制资源不随仓库分发
+#   src/win/app.ico              → python3 tools/gen_icon.py src/win/app.ico
+#   src/win/misans_*.otf         → 从 MiSans 官网下载后放入
+#   需要发布的 exe 请用 Release 或自行编译
+src/win/app.ico
+src/win/misans_regular.otf
+src/win/misans_semibold.otf
+
+# 测试素材（可由 tools/gen_assets.sh 生成）
+tests/assets/
+
+# 临时
+.tmp-tool-results/

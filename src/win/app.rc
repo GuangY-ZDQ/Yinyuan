@@ -1,0 +1,34 @@
+#pragma code_page(65001)
+#include <windows.h>
+
+1010 ICON "app.ico"
+1 24 "app.manifest"
+
+1011 RCDATA "misans_regular.otf"
+1012 RCDATA "misans_semibold.otf"
+
+1 VERSIONINFO
+FILEVERSION 1,0,0,0
+PRODUCTVERSION 1,0,0,0
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_APP
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "080404B0"
+    BEGIN
+      VALUE "Comments", "把压缩包藏进可正常播放的 MP4 · 作者 泽渊"
+      VALUE "FileDescription", "隐渊"
+      VALUE "FileVersion", "1.0.0.0"
+      VALUE "InternalName", "YinYuan"
+      VALUE "LegalCopyright", "本地工具，绿色免安装"
+      VALUE "OriginalFilename", "隐渊.exe"
+      VALUE "ProductName", "隐渊"
+      VALUE "ProductVersion", "1.0.0.0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x804, 1200
+  END
+END
